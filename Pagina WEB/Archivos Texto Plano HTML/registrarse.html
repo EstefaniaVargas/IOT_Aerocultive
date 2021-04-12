@@ -1,0 +1,161 @@
+<!-- Este archivo sirve para registrarse en la página -->
+<html lang="es"><!-- Se configura idioma a español -->
+        <head>
+
+                <meta charset="utf-8">
+                
+                <!--Para que se ajuste a la pantalla del dispositivo-->
+                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+                
+                <!-- Llamar al archivo CSS que le da el formato -->
+                <link rel="stylesheet" href="estilo.css">
+                
+                <title>Aerocultive Innovation</title>
+                <link rel="shortcut icon" href="Aerocultive_Logo.jpg">
+
+        </head>
+        <!-- Fijar el encabezado SCROLL(permite bajar la barra de navegacion) offset(fijo el espacio) navbar(fija la barra a la pagina)-->
+        <body data-spy="scroll" data-target="#navbar" data-offset="106">
+                <!-- Se llama a los archivos header html para el encabezado y ingresar.php para el boton -->
+                <?php
+                include 'header.html';
+                ?>
+                
+                <?php
+                include 'registrarse.php';
+                ?>
+                
+                <!-- Se crea el container del formulario de registro-->
+                <div class="container_reg mt-4" id="loginFormUI">                       
+                        <div class="row d-flex justify-content-center">
+                                <div class="col-xl-6 col-6 mt-4">
+                                        <h2>
+                                                <!-- Seagrgea el tirulo de la pagina-->
+                                                Ingrese sus datos para registrarse
+                                        </h2>
+                                        <!--Tipo de formulario (POST espera el formulario) se refiere a registrarse.htm-->
+                                        <form name="signupForm" action="registrarse.html" method="post">
+                                                <div class="form-group">
+                                                        <label class="texto_form" for="name">
+                                                                 <!-- Se configura el estilo de la letra-->
+                                                                <font face="Bedrock">Nombre
+                                                                </font>
+                                                        </label>
+                                                        <!-- Se crea el espacio de ingresar usuario se asigna tipo texto, variable Nombre, se muestra un texto y el espacio es requerido-->
+                                                        <input
+                                                        type="text"
+                                                        name="Nombre"
+                                                        placeholder="Ingrese su nombre"
+                                                        class="form-control"
+                                                        required
+                                                        />
+                                                </div>
+                                                <div class="form-group">
+                                                        <label class="texto_form" for="lastname">
+                                                                <!-- Se configura el estilo de la letra-->
+                                                                <font face="Bedrock">Apellido
+                                                                </font>
+                                                        </label>
+                                                         <!-- Se crea el espacio de ingresar usuario se asigna tipo texto, variable Apellido, se muestra un texto y el espacio es requerido-->
+                                                        <input 
+                                                        type="text"
+                                                        name="Apellido"
+                                                        placeholder="Ingrese su apellido"
+                                                        class="form-control"
+                                                        required
+                                                        />
+                                                </div>
+                                                
+                                                <div class="form-group">
+                                                        <label class="texto_form" for="inputEmail">
+                                                                <!-- Se configura el estilo de la letra-->
+                                                                <font face="Bedrock">Correo
+                                                                </font>
+                                                        </label>
+                                                         <!-- Se crea el espacio de ingresar usuario se asigna tipo texto, variable email, se muestra un texto y el espacio es requerido-->
+                                                        <input
+                                                        type="email"
+                                                        name="email"
+                                                        placeholder="Ingrese su correo electrónico"
+                                                        class="form-control"
+                                                        aria-describedby="emailHelp"
+                                                        required
+                                                        />
+                                                </div>
+                                                
+                                                <div class="form-group">
+                                                        <label class="texto_form" for="username">
+                                                                <!-- Se configura el estilo de la letra-->
+                                                                <font face="Bedrock">Nombre de Usuario
+                                                                </font>
+                                                        </label>
+                                                         <!-- Se crea el espacio de ingresar usuario se asigna tipo texto, variable username, se muestra un texto y el espacio es requerido-->
+                                                        <input
+                                                        type="text"
+                                                        name="username"
+                                                        placeholder="Ingrese su nombre de usuario"
+                                                        class="form-control"
+                                                        required
+                                                        />        
+                                                </div>
+                                                <span id="availability">
+                                                </span>
+                                                <div class="form-group">
+                                                        <label class="texto_form" for="inputPass">
+                                                                <!-- Se configura el estilo de la letra-->
+                                                                <font face="Bedrock">Contraseña
+                                                                </font>
+                                                        </label>
+                                                        <!-- Se crea el espacio de ingresar usuario se asigna tipo texto, variable password, se muestra un texto y el espacio es requerido-->
+                                                        <input
+                                                        type="password"
+                                                        name="password"
+                                                        placeholder="Ingrese su contraseña"
+                                                        class="form-control"
+                                                        required
+                                                        />
+                                                </div>
+                                                <!-- Se define el boton de registarse-->
+                                                <button id="register" type="submit" class="boton">
+                                                        Registrarse
+                                                </button>
+                                        </form>
+                                </div>
+                        </div>
+                </div>
+                                
+                <!-- Si el usuario se encuentra registrado --> 
+                <?php if (isset($name_error)): ?>    
+                <div 
+                        class="alert alert-danger alert-dismissable">Lo sentimos, tu registro no ha sido validado ya que el nombre de usuario no está disponible
+                        <a href="registrarse.html" class="close" data-dismiss="alert" aria-label="close">&times;
+                        </a>
+                </div>
+                
+                <?php endif ?>
+                
+                <!-- Registro exitoso --> 
+                <?php if (isset($exito)): ?>    
+                <div 
+                        class="alert alert-success alert-dismissable">¡Registro exitoso!
+                        <a href="registrarse.html" class="close" data-dismiss="alert" aria-label="close">&times;
+                        </a>
+                        <div class="alert1 alert-success alert-dismissable">
+                                <a href="ingresar.html"><font face="Bedrock">Ingresar</font></a>
+                        </div>
+                </div>
+                
+                <?php endif ?>
+                
+                <!-- Si el email ya se encuentra registardo -->
+                <?php if (isset($email_error)): ?>
+                
+                <div 
+                        class="alert alert-danger alert-dismissable">Lo sentimos, tu registro no ha sido validado ya que el correo ya se encuentra registrado
+                        <a href="registrarse.html" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                </div>  
+                
+                <?php endif ?>
+                
+        </body>
+</html>

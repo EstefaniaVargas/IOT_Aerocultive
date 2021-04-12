@@ -1,0 +1,275 @@
+/* Archivo de estilo para cada una de las clases */
+
+/* estilo para la la barra de navergacion*/
+header nav{
+    background-color: #62CF7B !important; /* Se define color de fondo(verde) */
+    overflow: hidden;    /* El contenido es recortado y no se muestran barras de navegacion*/
+    text-decoration:null;/*Sin decoracion*/
+    width: 100%;         /*Se especifica el ancho del area*/
+    margin: auto;        /* establece un margen para los cuatro lados de forma automatica */
+    height: 80px;        /*Se especifica la altura del area de un elemento*/  
+}
+
+
+.reg{
+    font-family: 'Bedrock'; /* Se configura el tipo de letra*/
+    color: #545454;         /* Se define el color del texto */
+}
+
+/*estilo para los formularios de registro y de ingreso*/
+.form-group{
+    display:block;     /* Se genera un cuadro de elemento de bloque*/
+    position:relative; /* elemento posicionado relativamente*/
+    margin:auto auto;  /* establece un margen para los cuatro lados de forma automatica */
+
+}
+
+.form_text{
+    position:relative;/* elemento posicionado relativamente*/
+    margin:auto;      /* establece un margen para los cuatro lados de forma automatica */
+
+}
+
+.input_form{
+    position:relative; /* elemento posicionado relativamente*/
+    top:20px;          /* distancia del elemento a la parte superior*/
+    margin:auto;      /* establece un margen para los cuatro lados de forma automatica */
+}
+
+/*Estilo para la clase de la barra de navegacion parte de logo y texto header.html */
+.navbar-brand{
+    font-family: 'Bedrock'; /* Se configura el tipo de letra*/
+    font-size: 1cm;         /* Se configura la dimension de la letra a 1cm*/
+    color: white;           /* Se configura el color de letra*/
+    text-decoration:none;   /*Sin decoracion*/
+    position: relative;     /* elemento posicionado relativamente*/
+}
+
+/*Estilo para la clase de la letra de los botones de la barra de navegacion ingresar,registrarse e inicio  header.html */
+.btn{
+    float: right;             /*Ubica el eleme nto al lado derecho del contenedor*/
+    text-align: center;       /* Ubica el texto en centro*/
+    font-family: 'Bedrock';   /* Se configura el tipo de letra*/
+    font-size: 0.6cm ;        /* Se pone la letra con un tamaño de 0.6cm*/
+    color: white;             /* Se configura el color de letra*/
+    text-decoration:none;     /*Sin decoracion*/
+    position: relative;       /* elemento posicionado relativamente*/
+    top: 20px;                /* distancia del elemento a la parte superior*/
+    //bottom: 40px; 
+    right:60px;               /* distancia del elemento a la parte derecha*/
+    width:100px;              /*Se especifica el ancho del area*/
+    display:inline-block;     /* Se genera una caja de elemento bloque*/
+color:#FFFFFF;            /* Se define el color */
+padding:10px 10px;        /* Establece el contenido en el centro del contenedor*/
+line-height:normal;       /* Se establece la distancia entre lineas de texto en 1.2 */
+-webkit-transition:all 500ms ease;
+-o-transition:all 500ms ease;
+transition:all 500ms ease; /* Aplica a todas las propiedades que cambien*/
+}
+
+.btn:hover{
+    background:#44A65C;
+border-radius:50px;
+}
+
+/*estilo de la clase de la imagen del logo en la barra de navegacion header.html*/
+.imagen{
+    /*Se define el tamaño del area y la posicion con respecto a los 4 laterales */
+    width:60;  
+    length=60;
+    position: relative;
+    top: 12px; 
+    left: 30px;
+}
+
+/*estilo de la clase del texto en la barra de navegacion header.html*/
+.Texto{
+    /*Se define el estilo de letr, tamaño y color*/
+    font-family: 'Bedrock';
+    font-size: 1cm;
+    color: white;
+    text-decoration:none;
+    /*Se define el tamaño del area, la posicion con respecto a los 4 laterales */
+    position: relative;
+    top: 0px; 
+    left: 40px;
+}
+
+html, body {
+margin: 0;
+height: 100%;
+width: 100%
+min-height: 100%;
+min-width: 100%;
+    overflow-x: hidden;
+}
+
+/*estilo del body */
+body {
+display: flex;          /*El elemento se se comporta como un elemento bloque*/
+flex-direction: column; /* Define los elementos del contenedor en columna*/
+background-image: url("fondo_registro.jpg") /* se coloca un fondo a la pagina de registro e ingresar*/
+}
+
+/*estilo del footer footer.html */
+footer {
+width: 100%;
+    height: 3em;
+display: flex;       
+align-items: center;    /*los items se colocan alineados entre si*/
+justify-content: center;/*los items se colovcan hacia el centro de linea*/
+    background-color: #62CF7B;
+font-family: 'Bedrock';
+font-size: 1.1em;
+z-index: 10;
+}
+
+h1 {
+background-color: #62CF7B;
+font-family: 'Bedrock';
+font-size: 4em;
+padding:  0em 0.2em;
+}
+
+/*Estilo de la clase de toda la barra de navegacion*/
+.container{
+    z-index: 1; // Para mostrarlo debajo del header
+}
+
+/*estilo de la clase de todo el formulario de ingresar y registrar*/
+.container_reg{
+    width:50%;
+    position: relative;
+    left:500px;
+    float:center;
+    display: flex;
+    aling-items:center;
+    z-index: 1; // Para mostrarlo debajo del header
+}
+
+/* estilo para los mensajes de error o alerta, mostrados en el registro o ingreso*/
+.alert {
+left: 0;
+right: 0;
+margin: auto;                   /*centra todo el componente */
+position: absolute !important;  /*So that it will display relative to the entire page*/
+align-items:center;
+font-family: 'Bedrock';
+text-align: center;            /*Centers 'Alert Test' text*/
+top: 0px;
+border-radius: 2px;            /*Se define el redondo de las esquinas*/
+width: 47%;
+padding:1rem .9rem;
+z-index: 1;                    /* Displays over app and bootstrap Navbar*/
+}
+
+/* estilo para los mensajes de exito mostrados en registro o ingreso*/
+.alert1 {
+left: 0;
+right: 0;
+margin: auto;                   /* Centers alert component*/
+position: absolute !important;  /*So that it will display relative to the entire page*/
+align-items:center;
+font-family: 'Bedrock';
+text-align: center;            /* Centers 'Alert Test' text*/
+top: 0px;
+border-radius: 2px;
+width: 47%;
+padding:1rem .9rem;
+z-index: 1;                   /* Displays over app and bootstrap Navbar*/
+} 
+
+/*Se define el color para los mensajes de exito en registro e ingreso (verde)*/
+.alert-success {
+background-color: #dff0d8;
+border-color: #d6e9c6;
+color: #3c763d;
+}
+
+/*Se define el color para los mensajes de error en registro e ingreso(rojo)*/
+.alert-danger {
+color: #721c24;
+background-color: #f8d7da;
+border-color: #f5c6cb;
+}
+
+.close {
+float: right;
+font-size: 1.5rem;
+font-weight: 700;
+line-height: 1;
+color: #000 !important;
+text-shadow: 0 1px 0 #fff;
+opacity: .5;
+text-decoration:none;
+}
+
+/*Estilo para la letra mostrada en las cassillas de texto de registro e ingresar */
+.form-control{
+    display:block;
+    width:400px;
+    height:50px;
+    padding:.375rem .75rem;
+    font-size:1rem;
+    font-weight:400;
+    font-family: 'Bedrock' !important;
+    line-height:1.5;
+    color:#495057;
+    background-color:#fff;
+    background-clip:padding-box;   /*el fondo no se muestra a traves del borde*/
+    border:1px solid #ced4da;      /* define todos los border con tamaño 1px, color solido y el color*/
+    border-radius:.25rem;
+    transition:border-color .15s ease-in-out,box-shadow .15s ease-in-out
+}
+
+/*Clase para el estilo de los formularios*/
+.form-group{
+    margin-bottom:1rem; /* establece el espacio en 1 con respecto a la parte inferior*/
+}
+
+/*estilo del texto mostrado en las indicaciones de los formularios*/
+label{
+    display:block;
+    margin-bottom: 10px !important;  
+}
+
+
+.alert1 a{
+text-decoration: none;
+color: #34A921;
+
+}
+
+.alert a{
+text-decoration: null;
+color: #34A921;
+
+}
+
+
+#vertical {
+display: flex;
+
+align-items: center;	
+}
+
+/*estilo para los botones de registarse e ingresar */
+.boton{
+    font-family: 'Bedrock';
+    padding: 10px;
+    color: white;
+    background: #62CF7B;
+    width: 100px;              /*ancho del cuadrito*/    
+    margin:20px auto;
+    margin-top:20px;
+    border-radius: 8px;
+    border:2px solid #44A65C;
+    cursor: pointer;          /* muestra una manita en l cursor al pararse en el boton*/
+    position: relative;
+    left:300px;
+
+}
+
+.boton:active{
+    background-color: #46AD60;
+}

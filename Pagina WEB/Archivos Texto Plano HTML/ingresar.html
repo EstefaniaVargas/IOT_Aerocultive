@@ -1,0 +1,108 @@
+<!-- Archivo  de la pagina de ingresar -->
+<html lang="es"> <!-- Se configura idioma a español -->
+        <head>
+                <!-- Required meta tags -->
+                <meta charset="utf-8"> <!-- Decodificacion -->
+                 <!--Para que se ajuste a la pantalla del dispositivo-->
+                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+                
+                <!-- Añadir el CSS de estilo -->
+                <link rel="stylesheet" href="estilo.css">
+                <title>
+                        Aerocultive Innovation
+                </title>
+                <link rel="shortcut icon" href="Aerocultive_Logo.jpg">
+        
+        </head>
+        
+         <!-- Fijar el encabezado SCROLL(permite bajar la barra de navegacion) offset(fijo el espacio) navbar(fija la barra a la pagina)-->
+        <body data-spy="scroll" data-target="#navbar" data-offset="106">
+        
+                <!-- Se llama a los archivos header html para el encabezado y ingresar.php para el boton -->
+                <?php
+                include 'header.html';
+                ?>
+                
+                <?php
+                include 'ingresar.php';
+                ?>
+                
+                <!-- Se crea el container del formulario de ingresar-->
+                <div class="container_reg mt-4" id="loginFormUI">                       
+                        <div 
+                                class="row d-flex justify-content-center">
+                                <div class=" col-xl-6 col-6 mt-4">
+                                        <h2>
+                                                <!-- Se configura el estilo de la letra-->
+                                                <font face="Bedrock"> 
+                                                        Ingresar
+                                                </font>
+                                        </h2>
+                                        
+                                        <!--Tipo de formulario (POST espera el formulario) se refiere a ingresar html-->
+                                        <form name="loginForm" action="ingresar.html" method="post">
+                
+                                                <div class="form-group">
+                                                        <label for="username">
+                                                                <!-- Se configura el estilo de la letra-->
+                                                                <font face="Bedrock">
+                                                                        Nombre de Usuario
+                                                                </font>
+                                                        </label>
+                                                         <!-- Se crea el espacio de ingresar usuario se asigna tipo texto, variable username, se muestra un texto y el espacio es requerido-->
+                                                        <input
+                                                                type="text"
+                                                                name="username"
+                                                                placeholder="Ingrese su nombre de usuario"
+                                                                class="form-control"
+                                                                required 
+                                                        />
+                                                </div>
+                
+                                                <div class="form-group">
+                                                        <label for="inputPass">
+                                                                <!-- Se configura el estilo de la letra-->
+                                                                <font face="Bedrock">
+                                                                        Contraseña
+                                                                </font>
+                                                        </label>
+                                                        <!-- Se crea el espacio de ingresar usuario se asigna tipo texto, variable username, se muestra un texto y el espacio es requerido-->
+                                                        <input
+                                                                type="password"
+                                                                name="password"
+                                                                placeholder="Ingrese su contraseña"
+                                                                class="form-control"
+                                                                required
+                                                        />
+                                                </div>
+                                                <!-- Se define el boton de ingresar-->
+                                                <button id="submit" type="submit" class="boton">
+                                                        <!-- Se configura el estilo de la letra-->
+                                                        <font face="Bedrock">
+                                                                Ingresar
+                                                        </font>
+                                                </button>
+                                        </form>                                       
+                                </div>
+                        </div>
+                </div>
+                                                               
+                <!-- Si el usuario se encuentra registrado -->                
+                <?php if (isset($ingreso_exitoso)): ?>    
+                <!-- Si el usuario y contraseña son correctos se redirige a la pagina de inicio de datos de sensores -->    
+                <meta http-equiv="refresh" content="0; URL=http://aerocultiveinnovation.125mb.com/inicio.html" />    
+                
+                <?php endif ?>
+                
+                <?php if (isset($error)): ?>
+                <!-- Si el usuario o contraseña ingresados son incorrectos muestra una alerta --> 
+                <div class="alert alert-danger alert-dismissable">
+                        Usuario o Contraseña Inválidos
+                        <a href="ingresar.html" class="close" data-dismiss="alert" aria-label="close">&times;
+                        </a>
+                </div>  
+                
+                <?php endif ?>
+        
+        </body>
+</html>
