@@ -6,4 +6,7 @@ La aplicación móvil se conecta a una base de datos en ***Firebase*** la cual p
 
 Se tiene una página web la cual fue alojada en ***125mb***. Este repositorio tiene los códigos del diseño de la página como archivos php para el registro e ingreso de usuarios en una base de datos en ***phpadmin***. Al ingresar se muestran los datos mandados de ***ThingSpeak*** mencionados anteriormente.
 
+La pagina web es: http://aerocultiveinnovation.125mb.com/
+
+
 
