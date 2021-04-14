@@ -1,8 +1,10 @@
 /* Archivo de estilo para cada una de las clases */
 
+                                                /*Configuraciones de estilo de la barra de navegacion*/
+
 /* estilo para la la barra de navergacion*/
 header nav{
-    background-color: #62CF7B !important; /* Se define color de fondo(verde) */
+    background-color: #B9E90F !important; /* Se define color de fondo(verde) */
     overflow: hidden;    /* El contenido es recortado y no se muestran barras de navegacion*/
     text-decoration:null;/*Sin decoracion*/
     width: 100%;         /*Se especifica el ancho del area*/
@@ -10,31 +12,6 @@ header nav{
     height: 80px;        /*Se especifica la altura del area de un elemento*/  
 }
 
-
-.reg{
-    font-family: 'Bedrock'; /* Se configura el tipo de letra*/
-    color: #545454;         /* Se define el color del texto */
-}
-
-/*estilo para los formularios de registro y de ingreso*/
-.form-group{
-    display:block;     /* Se genera un cuadro de elemento de bloque*/
-    position:relative; /* elemento posicionado relativamente*/
-    margin:auto auto;  /* establece un margen para los cuatro lados de forma automatica */
-
-}
-
-.form_text{
-    position:relative;/* elemento posicionado relativamente*/
-    margin:auto;      /* establece un margen para los cuatro lados de forma automatica */
-
-}
-
-.input_form{
-    position:relative; /* elemento posicionado relativamente*/
-    top:20px;          /* distancia del elemento a la parte superior*/
-    margin:auto;      /* establece un margen para los cuatro lados de forma automatica */
-}
 
 /*Estilo para la clase de la barra de navegacion parte de logo y texto header.html */
 .navbar-brand{
@@ -67,8 +44,9 @@ line-height:normal;       /* Se establece la distancia entre lineas de texto en 
 transition:all 500ms ease; /* Aplica a todas las propiedades que cambien*/
 }
 
+/*Estilo para cambiar el formato cuando se pase el cursor en los botones*/
 .btn:hover{
-    background:#44A65C;
+    background:#97BD10;
 border-radius:50px;
 }
 
@@ -95,6 +73,7 @@ border-radius:50px;
     left: 40px;
 }
 
+/* Estilo para el body*/
 html, body {
 margin: 0;
 height: 100%;
@@ -124,17 +103,14 @@ font-size: 1.1em;
 z-index: 10;
 }
 
-h1 {
-background-color: #62CF7B;
-font-family: 'Bedrock';
-font-size: 4em;
-padding:  0em 0.2em;
-}
 
 /*Estilo de la clase de toda la barra de navegacion*/
 .container{
     z-index: 1; // Para mostrarlo debajo del header
 }
+
+
+                                           /*Estilo para los formularios de ingreso y registro*/
 
 /*estilo de la clase de todo el formulario de ingresar y registrar*/
 .container_reg{
@@ -193,6 +169,7 @@ background-color: #f8d7da;
 border-color: #f5c6cb;
 }
 
+/*estilo de la x del mensaje de alerta */
 .close {
 float: right;
 font-size: 1.5rem;
@@ -233,13 +210,14 @@ label{
     margin-bottom: 10px !important;  
 }
 
-
+/*etiqueta para registrar*/
 .alert1 a{
 text-decoration: none;
 color: #34A921;
 
 }
 
+/*etiqueta ingresar */
 .alert a{
 text-decoration: null;
 color: #34A921;
@@ -247,29 +225,24 @@ color: #34A921;
 }
 
 
-#vertical {
-display: flex;
-
-align-items: center;	
-}
-
 /*estilo para los botones de registarse e ingresar */
 .boton{
     font-family: 'Bedrock';
     padding: 10px;
     color: white;
-    background: #62CF7B;
+    background: #97BD10;
     width: 100px;              /*ancho del cuadrito*/    
     margin:20px auto;
     margin-top:20px;
     border-radius: 8px;
-    border:2px solid #44A65C;
+    border:2px solid #B9E90F;
     cursor: pointer;          /* muestra una manita en l cursor al pararse en el boton*/
     position: relative;
     left:300px;
 
 }
 
+/*estilo para */
 .boton:active{
     background-color: #46AD60;
 }

@@ -1,0 +1,277 @@
+<!-- Archivo de la página principal -->
+<html lang="es">
+         <!-- Inclusión de archivos y logotipo de la pestaña -->
+        <head>
+
+                <meta charset="utf-8">
+                
+                <!--Para que se ajuste a la pantalla del dispositivo-->
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                
+                <!-- Llamar al archivo CSS que le da el formato -->
+                <link rel="stylesheet" href="estilo_principal.css">
+                
+                <!-- Para ponerle logo y nombre a la pestaña -->
+                <title>Aerocultive Innovation</title>
+                <link rel="shortcut icon" href="Aerocultive_Logo.jpg">
+                
+                <!-- Inclusión de librerías de fuentes -->
+                <!-- Letra Títulos -->
+                <link rel="preconnect" href="https://fonts.gstatic.com">
+                <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+                <!-- Letra Título Intermedio-->
+                <link rel="preconnect" href="https://fonts.gstatic.com">
+                <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&family=Lobster&display=swap" rel="stylesheet">   
+
+        </head>
+        
+        <body data-spy="scroll" data-target="#navbar" data-offset="106">
+        
+       
+        <!-- Para el header -->
+                <header>
+                        <!-- Barra de Navegación -->
+                        <nav class="navbar navbar-expand-lg fixed-top">
+                                <div class="container">
+                                        <!-- Logo y título de la página con links de acceso -->
+                                        <a class="navbar-brand" href="http://aerocultiveinnovation.125mb.com">
+                                                <img class="imagen" src="Aerocultive_Logo.jpg" alt="logo">
+                                                <a class="Texto" href="http://aerocultiveinnovation.125mb.com">Aerocultive Innovation</a>
+                                        </a>
+                                        
+                                        <!-- Botón para ingresar -->
+                                        <a class="btn" href="ingresar.html">
+                                                Ingresar
+                                        </a>
+                                        
+                                        <!-- Botón para registrarse -->
+                                        <a class="btn" href="registrarse.html">
+                                                Registrarse
+                                        </a>
+                                        
+                                        <!-- Botón para ir a la página principal -->
+                                        <a class="btn" href="http://aerocultiveinnovation.125mb.com">
+                                                Inicio
+                                        </a>   
+                                </div>
+                        </nav>
+                </header>
+        
+        
+                <!-- Para desplazar las imágenes -->
+                <div class="slideshow-container">
+                        <!-- Primera imagen -->
+                        <div class="mySlides fade">
+                                <img class="car_img" src="car_6.jpg">
+                                <div class="text_car">Aerocultive Innovation</div>
+                                <div class="subtext_car">Innova la Forma de Cultivar</div>
+                        </div>
+                        <!-- Segunda imagen -->
+                        <div class="mySlides fade">
+                                <img class="car_img" src="car_2.jpeg">
+                                <div class="text_car">Aerocultive Innovation</div>
+                                <div class="subtext_car">Innova la Forma de Cultivar</div>
+                        </div>
+                         <!-- Tercera imagen -->
+                        <div class="mySlides fade">
+                                <img class="car_img" src="car_4.png" style="width:100%">
+                                <div class="text_car">Aerocultive Innovation</div>
+                                <div class="subtext_car">Innova la Forma de Cultivar</div>
+                        </div>
+                
+                </div>
+                <!-- Se incluye el código para que las imágenes pasen automáticamente -->
+                <script src="carrusel.js"></script>
+                                
+                
+                
+                <!-- ¿Qué es Aerocultive? -->
+                <section>
+                        <!-- Se crea una imagen de fondo -->
+                        <div class="bg-image img1">
+                                <!-- Título principal sobre la imagen -->
+                                <div class="titulo_servicios_que">¿Qué es Aerocultive?</div>
+                        </div>
+                         
+                </section>
+                
+                <section>
+                        <div class="slideshow-modelo">
+                                <div class="mySlides_modelo fade_modelo">
+                                  <img class="carrusel_modelo_img" src="camaras.jpeg">
+                                </div>
+                                
+                                <div class="mySlides_modelo fade_modelo">
+                                  <img class="carrusel_modelo_img" src="nutrientes.jpeg">
+                                </div>
+                                
+                                <div class="mySlides_modelo fade_modelo">
+                                  <img class="carrusel_modelo_img" src="car_que_1.png">
+                                </div>
+                                
+                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                
+                        </div>
+                        
+                        <br>
+                        <div style="text-align:center">
+                          <span class="punto" onclick="currentSlide(1)"></span> 
+                          <span class="punto" onclick="currentSlide(2)"></span> 
+                          <span class="punto" onclick="currentSlide(3)"></span> 
+                        </div>
+                                
+                        <script src="carrusel_modelo.js"></script>
+                        
+                        <div class="bloque">
+                                
+                                Aerocultive es un sistema vertical para agricultura aeropónica en el hogar, 
+                                en donde se monitorean variables físicas del cultivo como pH, intensidad 
+                                lumínica, humedad y temperatura, de modo que el usuario tenga acceso a la información
+                                de las condiciones de su cultivo. Asi mismo, cuenta con un sistema de control para 
+                                mantener los valores de humedad y pH en los rangos óptimos para la planta. Aerocultive brinda
+                                la posibilidad de cultivar el tipo de planta que el usuario seleccione en la aplicación móvil 
+                                de entre tres tipos de planta: Lechuga, Cilantro y Ajo. Adicional a la aplicación móvil, el sistema
+                                está vinculado a la página web de modo que el usuario puede tener información en tiempo real sobre 
+                                su cultivo desde cualquier locación.
+                        </div>
+                        
+                        <div class="bloque_usuarios">
+                                <div class="bloque_usuarios_img">
+                                        <img class="bloque_usuarios_img_img" src="usuarios.jpg">
+                                </div>
+                                <div class="bloque_usuarios_texto">
+                                        <div class="titulo_servicios_users">Nuestros Usuarios</div>
+                                        <div class="texto_users">
+                                        Aerocultive está diseñado para aquellas personas que quieran hacer parte de la 
+                                        agricultura urbana, aquellos que quieren tener un pequeño huerto en el hogar, 
+                                        aquellos que quieren experimentar nuevas técnicas de agricultura, más específicamente 
+                                        cualquier persona que quiera estar junto a nosotros mejorando la calidad de los vegetales 
+                                        que se consumen.
+                                        </div>
+                                        
+                                </div>
+                        
+                        </div>
+                                                
+                        
+                </section>
+
+                <!-- Descripción de Servicios -->
+                <section>
+                        <!-- Titulo -->
+                        <div class="titulo_servicios">¿Qué Pueden Encontrar?</div>
+                                <!-- División de la derecha 1 -->
+                                <div class="split right1">
+                                        <div class="centered">
+                                                <img src="planta.jpg">
+                                                <div class="titulo_sec">Selecciona Tu Planta</div>
+                                                <!-- Lista -->
+                                                <ul class="a">
+                                                        <li><div class="texto_servicios">Selecciona cualquier planta</div></li>
+                                                        <li><div class="texto_servicios">Configuración de Parámetros</div></li>
+                                                        <li><div class="texto_servicios">¡Míralas crecer!</div></li>
+                                                </ul>
+                                        </div>
+                                </div>
+                               
+                                <!-- División de la izquierda 1 -->
+                                <div class="split left1">
+                                        <div class="centered">
+                                            <img src="estadistica.png">
+                                            <div class="titulo_sec">Análisis en Tiempo Real</div>
+                                            <!-- Lista -->
+                                            <ul class="a">
+                                                <li><div class="texto_servicios">Información del cultivo</div></li>
+                                                <li><div class="texto_servicios">Alertas tempranas</div></li>
+                                                <li><div class="texto_servicios">Datos importantes</div></li>
+                                            </ul>                            
+                                        </div>
+                                </div>
+                               
+                                <!-- División de la derecha 2 -->
+                                <div class="split right">
+                                        <div class="centered">
+                                                <img src="computador.jpg">
+                                                <div class="titulo_sec">Website</div>
+                                                <ul class="a">
+                                                        <li><div class="texto_servicios">Seguridad en la información</div></li>
+                                                        <li><div class="texto_servicios">Registrar e ingresar</div></li>
+                                                        <li><div class="texto_servicios">¡Contáctanos!</div></li>
+                                                </ul>                            
+                                        </div>
+                                </div>
+                               
+                                <!-- División de la izquierda 2 -->
+                                <div class="split left">
+                                        <div class="centered">
+                                                <img src="celular.png">
+                                                <div class="titulo_sec">Control en tus Manos</div>
+                                                <ul class="a">
+                                                        <li><div class="texto_servicios">Controlar On-Off</div></li>
+                                                        <li><div class="texto_servicios">Registrar e Ingresar</div></li>
+                                                        <li><div class="texto_servicios">Rápido Acceso</div></li>
+                                                </ul>                                  
+                                        </div>
+                                </div>
+                </section>    
+
+                <section>
+                        <div class="titulo_servicios_equipo" style="text-align:center">Nuestro Equipo</div>
+                        <div class="row_about">
+                          <div class="column_aboutus">
+                            <div class="card_aboutus">
+                              <div class="aboutus">
+                                <img src="Estefania.jpeg" alt="Jane" class="image_aboutus">	  		
+                                  <div class="overlay_aboutus">
+                                     <div class="text_aboutus">Pontificia Universidad javeriana<br>Ingeniería electrónica<br> estefania.vargas@javeriana.edu.co</div>
+                                        </div>		
+                              </div>
+                              <div class="container_aboutus">
+                                <h2>Estefania Vargas</h2>
+                              </div>
+                            </div>
+                          </div>
+                        
+                          <div class="column_aboutus">
+                            <div class="card_aboutus">
+                                <div class="aboutus">
+                                         <img src="Dayanna.jpeg" alt="Mike" class="image_aboutus">
+                                         <div class="overlay_aboutus">
+                                        <div class="text_aboutus">Pontificia Universidad javeriana<br>Ingeniería electrónica<br> mendez.dayanna@javeriana.edu.co</div>
+                                                </div>
+                               </div>
+                             <div class="container_aboutus">
+                                <h2>Dayanna Méndez</h2>
+                              </div>
+                            </div>
+                            </div>
+                          
+                         
+                          <div class="column_aboutus">
+                            <div class="card_aboutus">
+                                <div class="aboutus">
+                                        <img src="Yenny.jpeg" alt="John" class=image_aboutus>
+                                                <div class="overlay_aboutus">
+                                                <div class="text_aboutus">Pontificia Universidad javeriana<br>Ingeniería electrónica<br> yenny.beltran@javeriana.edu.co</div>
+                                                </div>
+                                 </div>
+                              <div class="container_aboutus">
+                                <h2>Yenny Beltrán</h2>
+                              </div>
+                            </div>
+                          </div>
+                          </div>
+                        
+                </section>
+                 
+                <!-- Inclusión del footer -->
+               
+                <?php
+                        include 'footer.html';
+                ?> 
+                
+        </body>
+        
+</html>
+

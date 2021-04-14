@@ -16,6 +16,6 @@ function showSlides() {
                 slideIndex = 1 // Se reinicia el apuntador a la posicion inicial
         }    
         slides[slideIndex-1].style.display = "block";   
-        setTimeout(showSlides, 3000); // Cambia la imagen cada 3 segundos 
+        setTimeout(showSlides, 6000); // Cambia la imagen cada 5 segundos 
 }
        
